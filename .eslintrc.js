@@ -1,14 +1,14 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
   },
   plugins: ["prettier"],
   extends: [
     "plugin:vue/recommended",
     "airbnb-base",
     "plugin:prettier/recommended",
-    "eslint:recommended"
+    "eslint:recommended",
   ],
   rules: {
     "no-console": "off",
@@ -17,18 +17,19 @@ module.exports = {
     "vue/singleline-html-element-content-newline": "off",
     "vue/require-default-prop": "off",
     "vue/html-closing-bracket-spacing": "off",
+    "vue/html-self-closing": "off",
     "vue/max-attributes-per-line": [
       "error",
       {
         singleline: 5,
         multiline: {
           max: 5,
-          allowFirstLine: true
-        }
-      }
-    ]
+          allowFirstLine: true,
+        },
+      },
+    ],
   },
   parserOptions: {
-    parser: "babel-eslint"
-  }
+    parser: "babel-eslint",
+  },
 };
